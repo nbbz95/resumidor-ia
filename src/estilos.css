@@ -1,0 +1,15 @@
+:root { --fondo:#f6f7f9; --tarjeta:#fff; --texto:#1d2330; --suave:#5d6677; --borde:#dde1e8; --acento:#7c3aed; --pos:#15803d; --neg:#b91c1c; }
+@media (prefers-color-scheme: dark) { :root { --fondo:#0f1115; --tarjeta:#181b21; --texto:#e7e9ee; --suave:#9aa3b2; --borde:#2a2f38; --acento:#a78bfa; --pos:#4ade80; --neg:#f87171; } }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--fondo); color: var(--texto); }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { margin: 0; } .sub, footer, #estado, #metricas { color: var(--suave); }
+form, #resultado { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; padding: 16px; margin-top: 16px; }
+textarea { width: 100%; min-height: 220px; font: inherit; padding: 10px; border-radius: 8px; border: 1px solid var(--borde); background: var(--fondo); color: var(--texto); resize: vertical; }
+.controles { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 12px; }
+select, button { font: inherit; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--borde); background: var(--tarjeta); color: var(--texto); }
+button[type=submit] { background: var(--acento); color: #fff; border: 0; cursor: pointer; }
+button:disabled { opacity: .6; cursor: progress; }
+#resumen li { margin-bottom: 8px; line-height: 1.5; }
+.positivo { color: var(--pos); } .negativo { color: var(--neg); } .neutral { color: var(--suave); }
+footer { margin-top: 24px; font-size: .9rem; } a { color: var(--acento); }
